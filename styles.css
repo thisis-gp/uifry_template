@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "clash_display";
+  src: url(assets/fonts/clash-display/ClashDisplayRegular.otf);
+}
+
+@font-face {
+  font-family: "clash_display_bold";
+  src: url(assets/fonts/clash-display/ClashDisplayBold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "clash_display";
+  text-transform: capitalize;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px 10%;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+nav img {
+  margin-right: 20px; /* Add some space to the right of the logo */
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Push the ul to the right of the logo */
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height, or 130% */
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #ff5555;
+}
+
+nav .dwnld-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.home-content {
+  padding: 10px 10px 10px 10%;
+  width: 52%;
+  overflow: hidden;
+  float: left;
+}
+
+.bg-text {
+  background-image: url(assets/images/background.svg);
+  padding-top: 20%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 451px;
+}
+
+.bg-text h1 span {
+  font-family: "clash_display_bold";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.bg-text p {
+  margin: 10px 0 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  opacity: 0.5;
+}
+
+.home-content .btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  height: 60px;
+}
+
+.ply-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 20px;
+  position: relative;
+}
+
+.ply-btn img {
+  margin-right: 10px;
+  display: block;
+  margin-right: 10px;
+}
+
+.bg-img {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  opacity: 0.8;
+}
+
+.home-img {
+  float: left;
+  width: 40%;
+  background-image: url(assets/images/background_rotate.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 60%;
+}
+
+.home-achievements img {
+  margin-top: 10%;
+}
+
+.feature-screen {
+  width: 52%;
+  overflow: hidden;
+  float: left;
+  background-image: url(assets/images/background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-left: 20px;
+}
+
+.feature-content {
+  padding: 10% 10px;
+  float: left;
+  width: 40%;
+}
+
+.feature-content span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ff5555;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.feature-content h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.feature-content ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.feature-content ul li span {
+  color: #000000;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.feature-content ul li p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.feature-content ul li img {
+  vertical-align: middle;
+}
+
+@media (max-width: 1150px) {
+  /* Styles for screens smaller than 1150px */
+
+  .navbar {
+    padding: 15px;
+    margin-bottom: 5%;
+  }
+
+  .home-section {
+    display: flex; /* Make the section flexible */
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .home-content {
+    width: 100%; /* Make content full width on small screens */
+    padding: 20px;
+  }
+
+  .home-content h1 {
+    font-size: 32px; /* Adjust heading size for smaller screens */
+  }
+
+  .home-content p {
+    font-size: 16px; /* Adjust paragraph size for smaller screens */
+  }
+
+  .home-img {
+    width: 100%; /* Make image full width on small screens */
+    margin-bottom: 20px; /* Add some space after the image */
+  }
+
+  .home-achievements img {
+    margin-top: 0; /* Remove top margin on small screens */
+  }
+
+  .btn-container {
+    /* Assuming your buttons are inside a container */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    margin-top: 20px; /* Add some space above the buttons */
+  }
+
+  .btn,
+  .ply-btn {
+    /* Apply styles to both buttons */
+    width: 100%; /* Make buttons full width on small screens */
+    margin-bottom: 10px; /* Add some space between buttons */
+  }
+
+  .ply-btn img {
+    margin-right: 5px; /* Adjust margin for smaller screens */
+  }
+
+  .bg-img {
+    display: none; /* Hide background image on small screens */
+  }
+}
